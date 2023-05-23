@@ -11,10 +11,11 @@ const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.backGround};
   color: ${({ theme }) => theme.colors.text};
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   .right-decoration{
     
 
