@@ -14,18 +14,17 @@ const Wrapper = styled.div`
   height: 90vh;
 `;
 const Content = styled.div`
-    display: flex;
-    height: 400px;
-    flex-direction: column;
-`;   
+  display: flex;
+  height: 400px;
+  flex-direction: column;
+`;
+
 const Experiences = () => {
   return (
     <Wrapper>
-        <Title text="Experiences" />
+      <Title text="Experiences" />
       <Content>
-
-
-        <Button text="Reach me" />
+    
       </Content>
     </Wrapper>
   );

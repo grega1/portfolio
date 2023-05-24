@@ -8,6 +8,7 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
+    color: ${({ theme }) => theme.colors.text};
    
   }
 `;
