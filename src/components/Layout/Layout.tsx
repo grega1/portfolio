@@ -16,17 +16,28 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  .right-decoration{
-    
-
+  .right-decoration {
     position: fixed;
-    right:90px;
-    bottom:480px;
+    right: 90px;
+    bottom: 480px;
   }
-  .left-decoration{
+  .left-decoration {
     position: fixed;
-    left:90px;
-    top:580px;
+    left: 90px;
+    top: 580px;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    .right-decoration {
+        transform: rotate(-90deg);
+        right: 400px;
+        bottom:0px;
+    }
+    .left-decoration {
+        transform: rotate(-90deg);
+        left:200px;
+        top:0px;
+    }
   }
 `;
 

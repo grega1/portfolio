@@ -25,9 +25,13 @@ export const Content = styled.div`
     font-size: 20px;
     color: ${({ theme }) => theme.colors.secondary};
   }
-  h1 {
+  h1,h2 {
     font-size: 50px;
     color: ${({ theme }) => theme.colors.primary};
+  }
+  h2{
+    margin-top:-25px;
+    color: ${({ theme }) => theme.colors.secondaryYellow};
   }
   p {
     font-size: 20px;
@@ -37,6 +41,26 @@ export const Content = styled.div`
   :last-child {
     margin: 100px auto 0;
   }
+  @media(max-width: 768px) {
+    width:370px;
+
+    span {
+    font-size: 16px;
+    color: ${({ theme }) => theme.colors.secondary};
+  }
+  h1,h2 {
+    font-size: 30px;
+    color: ${({ theme }) => theme.colors.primary};
+  }
+  p {
+    font-size: 16px;
+    line-height: 32px;
+    color: ${({ theme }) => theme.colors.text};
+  }
+  :last-child {
+    margin: 30px auto 0;
+  }
+  }
 `;
 
 const Home = () => {
@@ -44,9 +68,10 @@ const Home = () => {
     <Wrapper>
       <Content>
         <span>Hey, There.</span>
-        <h1>I am Adriano Grego. I enjoy build amazing things.</h1>
+        <h1>I am Adriano Grego.</h1>
+        <h2>I enjoy building amazing things.</h2>
         <p>
-          Software Developer (and occasionally UX/UI Designer) with emphasis in
+          Software Developer (and occasionally <span>UX/UI Designer</span>) with emphasis in
           Front-End Development. Passionate for building beautiful, useful and
           accessible things. Actually working on Freelance Projects.
         </p>

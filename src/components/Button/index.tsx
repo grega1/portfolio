@@ -14,7 +14,6 @@ const ButtonWrapper = styled.button`
   :focus {
     border-color: ${({ theme }) => theme.colors.primary};
     color:${({ theme }) => theme.colors.primary};
-    transition:all 0.25s cubic-bezier(0.645,0.045,0.355,1);
   }
 `;
 interface ButtonProps {
