@@ -10,8 +10,10 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   padding-top: 100px;
-  padding-bottom: 200px;
   height: 80vh;
+  @media(max-width: 768px) {
+    max-width: 768px;
+  }
 `;
 export const Content = styled.div`
   display: flex;

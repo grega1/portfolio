@@ -15,7 +15,6 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap:100px;
   justify-content: center;
   .right-decoration {
     position: fixed;

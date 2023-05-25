@@ -10,18 +10,19 @@ flex-direction: column;
   background-color: ${({ theme }) => theme.colors.secondaryPurple};
   border-radius:10px;
   gap:10px;
-  padding:40px 30px;
-  gap:10px;
+  padding:30px 30px;
   h2 {
     font-size: 20px;
+    height:52px;
     font-weight: 700;
     display:flex;
     align-items: center;
     justify-content: space-between;
   }
   p {
-    font-size: 16px;
+    font-size: 15px;
     height:190px;
+    font-weight: 300;
   }
   div{
     display: flex;

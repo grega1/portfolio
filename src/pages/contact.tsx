@@ -2,7 +2,7 @@ import * as React from "react";
 import styled from "styled-components";
 import Button from "../components/Button";
 import Title from "../components/Title";
-import qrcode from "../images/qrcode.png";
+// import qrcode from "../../images/qrcode.png";
 
 const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.backGround};
@@ -12,7 +12,8 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 100px;
+  margin-top: 200px;
+  margin-bottom: 100px;
   gap: 20px;
   height: 400px;
 `;
@@ -65,7 +66,7 @@ const Contact = () => {
             onClick={redirectToWhatsApp("Hi, I'm interested in your work")}
           />
         </CTA>
-        <QrCode src={qrcode} alt="QR Code" />
+        <QrCode src={"qrcode"} alt="QR Code" />
       </Content>
     </Wrapper>
   );

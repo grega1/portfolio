@@ -7,7 +7,8 @@ const ButtonWrapper = styled.button`
   border: 2px solid ${({ theme }) => theme.colors.primary};
   padding: 1rem;
   font-size:24px;
-  width:160px;
+  width:auto;
+  padding: 10px 20px;
   text-align: center;
   border-radius:50px;
   margin:0 auto;
@@ -16,7 +17,11 @@ const ButtonWrapper = styled.button`
   :focus {
     border-color: ${({ theme }) => theme.colors.primary};
     color:${({ theme }) => theme.colors.primary};
-  }
+
+    box-shadow: 4px 4px 0 0 ${({ theme }) => theme.colors.primary};
+    transform: translate(-5px, -5px);
+    }
+  
 `;
 interface ButtonProps {
     text: string;

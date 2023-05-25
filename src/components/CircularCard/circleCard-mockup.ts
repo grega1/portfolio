@@ -1,10 +1,17 @@
+import beyond from "../../images/circle-card/beyond.svg";
+import acessibility from "../../images/circle-card/acessibility.svg";
+import user from "../../images/circle-card/user.svg";
+import focus from "../../images/circle-card/focus.svg";
+import mobile from "../../images/circle-card/mobile.svg";
+import openMinded from "../../images/circle-card/open-minded.svg";
+
 export const circleCardMockup = [
   {
     title: "Beyond Front End",
     description: `Bringing interfaces to life with precision and finesse,`,
     icon: {
       name: "Laptop icon",
-      url: "../../images/circle-card/beyond.svg",
+      url: beyond,
     },
   },
   {
@@ -13,7 +20,7 @@ export const circleCardMockup = [
     Inclusive design advocate, crafting accessible experiences for a better web.`,
     icon: {
       name: "Acessibility icon",
-      url: "../../images/circle-card/acessibility.svg",
+      url: acessibility,
     },
   },
   {
@@ -22,7 +29,7 @@ export const circleCardMockup = [
     `,
     icon: {
       name: "User and heart",
-      url: "../../images/circle-card/user.svg",
+      url: user,
     },
   },
   {
@@ -30,7 +37,7 @@ export const circleCardMockup = [
     description: `Excellence in development with a relentless focus on quality.`,
     icon: {
       name: "Focus",
-      url: "../../images/circle-card/focus.svg",
+      url: focus,
     },
   },
   {
@@ -39,7 +46,7 @@ export const circleCardMockup = [
     `,
     icon: {
       name: "Mobile icon",
-      url: "../../images/circle-card/mobile.svg",
+      url: mobile,
     },
   },
   {
@@ -47,7 +54,7 @@ export const circleCardMockup = [
     description: `Open to learning, expanding horizons, and embracing new possibilities. `,
     icon: {
       name: "Open Minded",
-      url: "../../images/circle-card/open-minded.svg",
+      url: openMinded,
     },
   },
 ];

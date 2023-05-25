@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   align-items: flex-start;
   gap:20px;
   justify-content: center;
-  padding-top: 100px;
+margin-top: 200px;
   height: 90vh;
 `;
 const Content = styled.div`

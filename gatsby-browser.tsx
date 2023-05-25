@@ -1,7 +1,6 @@
 import React from "react";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 
-
 const GlobalStyles = createGlobalStyle`
   * {
     margin: 0;

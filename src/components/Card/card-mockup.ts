@@ -1,3 +1,13 @@
+// @ts-ignore
+import javascript from "../../images/javascript.svg";
+// @ts-ignore
+import react from "../../images/react.svg";
+import nextjs from "../../images/next.svg";
+import html from "../../images/html.svg";
+import css from "../../images/css.svg";
+import figma from "../../images/figma.svg";
+
+
 export const cardMockup = [
   {
     title: "O quadro",
@@ -7,11 +17,11 @@ export const cardMockup = [
     icons: [
       {
         name: "React",
-        url: "../../images/react.svg",
+        url: react,
       },
       {
         name: "Figma",
-        url: "../../images/figma.svg",
+        url: figma,
       },
     ],
     link: "https://www.oquadro.net/",
@@ -23,50 +33,50 @@ export const cardMockup = [
     icons: [
       {
         name: "React",
-        url: "../../images/react.svg",
+        url: react,
       },
       {
         name: "Next.JS",
-        url: "../../images/nextjs.svg",
+        url: nextjs,
       },
     ],
-    link: "https://phase2.hermapartprojects.org/menu-project/inscriptions-upon-the-water",
+    link: "https://phase2.hermapartprojects.org/inscriptions-upon-the-water",
   },
   {
     title: "A journey to Iran",
-    description: `The project is an autobiographical creation by Roya Soraya, mixing comic illustration with adaptations from pieces by Iranian poet Forough Farrokhzad to create three short stories that revolve around her first trip to Iran. the author herself is a young woman who grew up in Germany in a German-Iranian family.
+    description: `The project is an autobiographical creation by Roya Soraya, mixing comic illustration with adaptations from pieces by Iranian poet Forough Farrokhzad to create three short stories that revolve around her first trip to Iran.
 `,
     icons: [
       {
         name: "React",
-        url: "../../images/react.svg",
+        url: react,
       },
       {
         name: "Next.JS",
-        url: "../../images/nextjs.svg",
+        url: nextjs,
       },
     ],
-    link: "https://phase2.hermapartprojects.org/menu-project/a-journey-to-iran",
+    link: "https://phase2.hermapartprojects.org/a-journey-to-iran",
   },
   {
     title: "Whack a Virus",
-    description: `Whack-a-Mole is an action-packed game where the player needs to hit as many "COVID viruses" as possible that randomly pop up from holes in the ground. The objective is to swiftly hit the viruses before they disappear again. The game tests the player's reflexes and coordination, as the viruses can appear in different holes simultaneously.`,
+    description: `Whack-a-Mole is an action-packed game where the player needs to hit as many "COVID viruses" as possible that randomly pop up from holes in the ground. The objective is to swiftly hit the viruses before they disappear again. `,
     icons: [
         {
             name: "HTML",
-            url: "../../images/html.svg",
+            url: html,
           },
           {
             name: "Javascript",
-            url: "../../images/javascript.svg",
+            url: javascript,
           },
           {
             name: "CSS",
-            url: "../../images/css.svg",
+            url: css,
           },
           {
             name: "Figma",
-            url: "https://www.google.com/",
+            url: figma,
           },
     ],
     link: "https://grega1.github.io/whack-a-virus/",
@@ -74,23 +84,23 @@ export const cardMockup = [
   {
     title: "Periscopio P5",
     description:
-      "Galeria Periscópio bears its name as a homage to the optical instrument that allows one to see over an obstacle. With art as a vector for expanding vision, the gallery aims to contribute to the contemporary panorama through actions that shift perspectives and enable seeing beyond the barriers imposed by everyday life.",
+      "Galeria Periscópio bears its name as a homage to the optical instrument that allows one to see over an obstacle. With art as a vector for expanding vision, the gallery aims to contribute to the contemporary panorama through actions that shift perspectives.",
     icons: [
       {
         name: "HTML",
-        url: "../../images/html.svg",
+        url: html,
       },
       {
         name: "Javascript",
-        url: "../../images/javascript.svg",
+        url: javascript,
       },
       {
         name: "CSS",
-        url: "../../images/css.svg",
+        url: css,
       },
       {
         name: "Figma",
-        url: "../../images/figma.svg",
+        url: figma,
       },
     ],
     link: "https://p5-ten.vercel.app/",
@@ -102,15 +112,15 @@ export const cardMockup = [
     icons: [
       {
         name: "HTML",
-        url: "../../images/html.svg",
+        url: html,
       },
       {
         name: "Javascript",
-        url: "../../images/javascript.svg",
+        url: javascript,
       },
       {
         name: "CSS",
-        url: "../../images/css.svg",
+        url: css,
       },
     ],
     link: "https://www.comisiondelaverdad.co/pedagogia",

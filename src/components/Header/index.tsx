@@ -36,6 +36,9 @@ const Nav = styled.div`
     text-decoration: none;
     text-align: center;
     color: ${({ theme }) => theme.colors.text};
+    &:hover,:focus{
+      color: ${({ theme }) => theme.colors.primary};
+    }
   }
   :last-child {
     margin-left: 30px;
