@@ -20,6 +20,7 @@ const ButtonWrapper = styled.button`
 
     box-shadow: 4px 4px 0 0 ${({ theme }) => theme.colors.primary};
     transform: translate(-5px, -5px);
+    transition: all 0.25s ease-in-out;
     }
   
 `;

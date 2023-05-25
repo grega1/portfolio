@@ -4,17 +4,17 @@ const useMobile = (): boolean => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
   useEffect(() => {
-    const handleResize = () => {
-      const isMobileDevice = window.innerWidth <= 768;
-      setIsMobile(isMobileDevice);
+    const checkIfMobile = () => {
+      const mediaQuery = window.matchMedia("(max-width: 768px)");
+      setIsMobile(mediaQuery.matches);
     };
 
-    handleResize();
+    checkIfMobile();
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", checkIfMobile);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("resize", checkIfMobile);
     };
   }, []);
 

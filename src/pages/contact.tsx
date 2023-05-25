@@ -2,7 +2,8 @@ import * as React from "react";
 import styled from "styled-components";
 import Button from "../components/Button";
 import Title from "../components/Title";
-// import qrcode from "../../images/qrcode.png";
+// @ts-ignore
+import qrcode from "../images/qrcode.png";
 
 const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.backGround};
@@ -16,13 +17,27 @@ const Wrapper = styled.div`
   margin-bottom: 100px;
   gap: 20px;
   height: 400px;
+  @media(max-width: 768px) {
+    width:100%;
+    padding:0 20px;
+    align-items: center;
+    margin-top: 250px;
+
+  }
 `;
 const Content = styled.div`
   display: flex;
   width: 100%;
   height: auto;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content:space-between;
+  align-items: flex-start;
+  gap:450px;
+  @media(max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+
+  }
 `;
 const CTA = styled.div`
   display: flex;
@@ -34,6 +49,11 @@ const CTA = styled.div`
     text-align: left;
     font-weight: 400;
     line-height: 40px;
+  }
+  @media(max-width: 768px) {
+    width:380px;
+    align-items: center;
+
   }
 `;
 
@@ -66,7 +86,7 @@ const Contact = () => {
             onClick={redirectToWhatsApp("Hi, I'm interested in your work")}
           />
         </CTA>
-        <QrCode src={"qrcode"} alt="QR Code" />
+        <QrCode src={qrcode} alt="QR Code" />
       </Content>
     </Wrapper>
   );

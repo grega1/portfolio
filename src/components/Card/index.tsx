@@ -11,6 +11,20 @@ flex-direction: column;
   border-radius:10px;
   gap:10px;
   padding:30px 30px;
+  &:hover,
+  :focus {
+    border-color: ${({ theme }) => theme.colors.primary};
+    color:${({ theme }) => theme.colors.primary};
+
+    box-shadow: 4px 4px 0 0 ${({ theme }) => theme.colors.primary};
+    transform: translate(-5px, -5px);
+    transition: all 0.25s ease-in-out;
+    h2{color:${({ theme }) => theme.colors.primary};
+    svg{
+      stroke:${({ theme }) => theme.colors.primary};
+    }
+  }
+    }
   h2 {
     font-size: 20px;
     height:52px;
@@ -34,6 +48,7 @@ flex-direction: column;
     height: 20px;
     align-self:center;
     margin-top:5px;
+    
   }
 `;
 

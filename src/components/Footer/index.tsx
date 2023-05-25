@@ -12,7 +12,8 @@ const FooterWrapper = styled.footer`
   height: 140px;
   display: flex;
   align-items: center;
-
+  padding: 0 100px;
+  border-top: 2px solid ${({ theme }) => theme.colors.secondary};
   justify-content: space-between;
   @media (max-width: 768px) {
     min-width: 400px;

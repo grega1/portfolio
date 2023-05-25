@@ -1,6 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import Button from "../components/Button";
+import StyledDecorations from "../components/Decorations";
 
 const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.backGround};
@@ -12,7 +13,8 @@ const Wrapper = styled.div`
   padding-top: 100px;
   height: 80vh;
   @media(max-width: 768px) {
-    max-width: 768px;
+    width:100%;
+    padding: 100px 20px 0;
   }
 `;
 export const Content = styled.div`

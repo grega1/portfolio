@@ -2,13 +2,14 @@ import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
 import Button from "../Button";
+import useMobile from "../../hook/useMobile";
 import {useTheme} from "styled-components"
 
 const HeaderWrapper = styled.header`
   background-color: ${({ theme }) => theme.colors.backGround};
   color: ${({ theme }) => theme.colors.text};
-  filter: drop-shadow(0px 4px 4px #FFFFFF);
-  width: 100%;
+  filter: drop-shadow(0px 2px 0px ${({ theme }) => theme.colors.secondary});
+  min-width: 1440px;
   height: 100px;
   text-align: center;
   font-size: 1.5rem;
@@ -17,6 +18,9 @@ const HeaderWrapper = styled.header`
   display: flex;
   align-items: center;
   padding: 0 100px;
+  @media(max-width: 768px) {
+  padding: 0 20px;
+  }
 `;
 const Logo = styled.div`
   color: ${({ theme }) => theme.colors.text};
@@ -46,16 +50,16 @@ const Nav = styled.div`
 `;
 
 const Header = () => {
-    const theme=useTheme()
+  const isMobile = useMobile();
   return (
     <HeaderWrapper>
       <Logo> G R E G O </Logo>
-      <Nav>
+     {isMobile? (<></>) :(<Nav>
         <Link to="/">About Me</Link>
         <Link to="/">Projects</Link>
         <Link to="/">Experience</Link>
         <Button text="Resume"></Button>
-      </Nav>
+      </Nav>)}
     </HeaderWrapper>
   );
 };

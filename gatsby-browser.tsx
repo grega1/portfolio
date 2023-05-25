@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.colors.text};
    
   }
+  
 `;
 
 export const theme = {

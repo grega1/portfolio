@@ -21,6 +21,7 @@ const CircularCardWrapper = styled.div`
   }
   p {
     font-size: 16px;
+    width:250px;
   }
 `;
 
