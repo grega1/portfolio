@@ -3,12 +3,13 @@ import styled from "styled-components";
 import Header from "../Header";
 import Footer from "../Footer";
 
+
 interface LayoutProps {
   children: ReactNode;
 }
 
 const Wrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.backGround};
+   background-color: #161313;
   color: ${({ theme }) => theme.colors.text};
   width: 100%;
   height: auto;

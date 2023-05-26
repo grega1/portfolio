@@ -5,7 +5,7 @@ import CircularCard from "../components/CircularCard";
 import { circleCardMockup } from "../components/CircularCard/circleCard-mockup";
 
 const Wrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.backGround};
+   background-color: #161313;
   color: ${({ theme }) => theme.colors.text};
   max-width: 1440px;
   display: flex;

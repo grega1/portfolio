@@ -7,7 +7,7 @@ import Title from "../components/Title";
 import useMobile from "../hook/useMobile";
 
 const Wrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.backGround};
+  background-color: #161313;
   color: ${({ theme }) => theme.colors.text};
   max-width: 1440px;
   display: flex;
@@ -48,7 +48,7 @@ const Projects = () => {
           <Card {...card} />
         ))}
       </Content>
-      {isMobile ? <></> : <Button text="Show More" />}
+      {isMobile ? (<div></div>) : (<Button text="Show More" />)}
     </Wrapper>
   );
 };

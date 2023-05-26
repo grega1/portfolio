@@ -6,7 +6,7 @@ import linkedin from "../../images/linkedin.svg";
 import github from "../../images/github.svg";
 import twitter from "../../images/twitter.svg";
 const FooterWrapper = styled.footer`
-  background-color: ${({ theme }) => theme.colors.backGround};
+   background-color: #161313;
   color: ${({ theme }) => theme.colors.text};
   min-width: 1440px;
   height: 140px;

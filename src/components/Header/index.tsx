@@ -6,7 +6,7 @@ import useMobile from "../../hook/useMobile";
 import {useTheme} from "styled-components"
 
 const HeaderWrapper = styled.header`
-  background-color: ${({ theme }) => theme.colors.backGround};
+   background-color: #161313;
   color: ${({ theme }) => theme.colors.text};
   filter: drop-shadow(0px 2px 0px ${({ theme }) => theme.colors.secondary});
   min-width: 1440px;

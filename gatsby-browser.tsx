@@ -1,5 +1,6 @@
 import React from "react";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
+import  theme  from "./theme";
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -12,23 +13,6 @@ const GlobalStyles = createGlobalStyle`
   }
   
 `;
-
-export const theme = {
-  sizes: {
-    padding: "0 100px",
-    maxWidth: "1240px",
-  },
-
-  colors: {
-    primary: "#FFC107",
-    secondaryYellow: "#FFEB3B",
-    secondary: "#6A1B9A",
-    secondaryPurple: "#8849AE",
-    backGround: "#161313",
-    text: "#FFFFFF",
-  },
-};
-
 export const wrapRootElement = ({ element }) => (
   <ThemeProvider theme={theme}>
     <GlobalStyles />

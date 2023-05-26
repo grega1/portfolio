@@ -5,7 +5,7 @@ import Title from "../components/Title";
 import StyledDecorations from "../components/Decorations";
 
 const Wrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.backGround};
+   background-color: #161313;
   color: ${({ theme }) => theme.colors.text};
   max-width: 1440px;
   display: flex;
