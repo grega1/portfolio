@@ -7,13 +7,13 @@ import github from "../../images/github.svg";
 import twitter from "../../images/twitter.svg";
 const FooterWrapper = styled.footer`
    background-color: #161313;
-  color: ${({ theme }) => theme.colors.text};
+  color:${({ theme }) => theme.colors?.white};
   min-width: 1440px;
   height: 140px;
   display: flex;
   align-items: center;
   padding: 0 100px;
-  border-top: 2px solid ${({ theme }) => theme.colors.secondary};
+  border-top: 2px solid ${({ theme }) => theme.colors?.secondary};
   justify-content: space-between;
   @media (max-width: 768px) {
     min-width: 400px;
@@ -25,7 +25,7 @@ const FooterWrapper = styled.footer`
   }
 `;
 const Credits = styled.div`
-  color: ${({ theme }) => theme.colors.text};
+  color:${({ theme }) => theme.colors?.white};
   font-size: 12px;
   font-weight: 500;
   display: flex;
@@ -34,14 +34,14 @@ const Credits = styled.div`
   gap: 10px;
 
   .yellowSpan {
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors?.primary};
   }
   .purpleSpan {
-    color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors?.secondary};
   }
 `;
 const Social = styled.ul`
-  color: ${({ theme }) => theme.colors.text};
+  color:${({ theme }) => theme.colors?.white};
   font-size: 12px;
   display: flex;
   flex-direction: column;
@@ -65,10 +65,10 @@ const Links = styled.ul`
     font-size: 12px;
     a {
       text-decoration: none;
-      color: ${({ theme }) => theme.colors.text};
+      color:${({ theme }) => theme.colors?.white};
       &:hover,
       :focus {
-        color: ${({ theme }) => theme.colors.primary};
+        color: ${({ theme }) => theme.colors?.primary};
         text-decoration: underline;
       }
     }

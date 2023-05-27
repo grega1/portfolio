@@ -8,7 +8,7 @@ import useMobile from "../hook/useMobile";
 
 const Wrapper = styled.div`
   background-color: #161313;
-  color: ${({ theme }) => theme.colors.text};
+  color:${({ theme }) => theme.colors?.white};
   max-width: 1440px;
   display: flex;
   flex-direction: column;

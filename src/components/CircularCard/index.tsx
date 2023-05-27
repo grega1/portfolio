@@ -5,7 +5,7 @@ import styled from "styled-components";
 const CircularCardWrapper = styled.div`
   width: 350px;
   height: 350px;
-  background-color: ${({ theme }) => theme.colors.secondary};
+  background-color: ${({ theme }) => theme.colors?.secondary};
   border-radius: 50%;
   padding: 80px 60px;
   display: flex;
@@ -17,7 +17,7 @@ const CircularCardWrapper = styled.div`
   h2 {
     font-size: 20px;
     font-weight: 700;
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors?.primary};
   }
   p {
     font-size: 16px;

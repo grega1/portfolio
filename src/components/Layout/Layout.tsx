@@ -10,7 +10,7 @@ interface LayoutProps {
 
 const Wrapper = styled.div`
    background-color: #161313;
-  color: ${({ theme }) => theme.colors.text};
+  color: ${({ theme }) => theme.colors?.white};
   width: 100%;
   height: auto;
   display: flex;

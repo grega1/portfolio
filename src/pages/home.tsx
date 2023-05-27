@@ -5,7 +5,7 @@ import StyledDecorations from "../components/Decorations";
 
 const Wrapper = styled.div`
    background-color: #161313;
-  color: ${({ theme }) => theme.colors.text};
+  color:${({ theme }) => theme.colors?.white};
   max-width: 1440px;
   display: flex;
   align-items: center;
@@ -28,20 +28,20 @@ export const Content = styled.div`
   gap: 30px;
   span {
     font-size: 20px;
-    color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors?.secondary};
   }
   h1,h2 {
     font-size: 50px;
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors?.primary};
   }
   h2{
     margin-top:-25px;
-    color: ${({ theme }) => theme.colors.secondaryYellow};
+    color: ${({ theme }) => theme.colors?.secondaryYellow};
   }
   p {
     font-size: 20px;
     line-height: 32px;
-    color: ${({ theme }) => theme.colors.text};
+    color:${({ theme }) => theme.colors?.white};
   }
   :last-child {
     margin: 100px auto 0;
@@ -51,16 +51,16 @@ export const Content = styled.div`
 
     span {
     font-size: 16px;
-    color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors?.secondary};
   }
   h1,h2 {
     font-size: 30px;
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors?.primary};
   }
   p {
     font-size: 16px;
     line-height: 32px;
-    color: ${({ theme }) => theme.colors.text};
+    color:${({ theme }) => theme.colors?.white};
   }
   :last-child {
     margin: 30px auto 0;

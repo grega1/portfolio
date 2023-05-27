@@ -6,7 +6,7 @@ import StyledDecorations from "../components/Decorations";
 
 const Wrapper = styled.div`
    background-color: #161313;
-  color: ${({ theme }) => theme.colors.text};
+  color:${({ theme }) => theme.colors?.white};
   max-width: 1440px;
   display: flex;
   flex-direction: column;
@@ -34,7 +34,7 @@ const Content = styled.div`
   }
 `;
 const PurpleDiv = styled.div`
-  background-color: ${({ theme }) => theme.colors.secondary};
+  background-color: ${({ theme }) => theme.colors?.secondary};
   height: 730px;
   width: 730px;
   display: flex;
@@ -46,12 +46,12 @@ const PurpleDiv = styled.div`
 
   p {
     font-size: 20px;
-    color: ${({ theme }) => theme.colors.text};
+    color:${({ theme }) => theme.colors?.white};
     font-weight: 300;
     line-height: 30px;
   }
   span {
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors?.primary};
     font-weight: 500;
   }
   div {
@@ -67,7 +67,7 @@ const PurpleDiv = styled.div`
     gap: 20px;
     height: 110px;
     li::marker {
-      color: ${({ theme }) => theme.colors.primary};
+      color: ${({ theme }) => theme.colors?.primary};
     }
   }
   @media (max-width: 768px) {
@@ -118,7 +118,7 @@ const ImageWrapper = styled.div`
   }
 `;
 const YellowDiv = styled.div`
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors?.primary};
   height: 450px;
   width: 450px;
   position: relative;

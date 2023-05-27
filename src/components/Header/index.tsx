@@ -7,8 +7,8 @@ import {useTheme} from "styled-components"
 
 const HeaderWrapper = styled.header`
    background-color: #161313;
-  color: ${({ theme }) => theme.colors.text};
-  filter: drop-shadow(0px 2px 0px ${({ theme }) => theme.colors.secondary});
+  color:${({ theme }) => theme.colors?.white};
+  filter: drop-shadow(0px 2px 0px ${({ theme }) => theme.colors?.secondary});
   min-width: 1440px;
   height: 100px;
   text-align: center;
@@ -23,13 +23,13 @@ const HeaderWrapper = styled.header`
   }
 `;
 const Logo = styled.div`
-  color: ${({ theme }) => theme.colors.text};
+  color:${({ theme }) => theme.colors?.white};
   font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: -0.15em;
 `;
 const Nav = styled.div`
-  color: ${({ theme }) => theme.colors.text};
+  color:${({ theme }) => theme.colors?.white};
   font-size: 1.5rem;
   font-weight: 400;
   display: flex;
@@ -39,9 +39,9 @@ const Nav = styled.div`
   a{
     text-decoration: none;
     text-align: center;
-    color: ${({ theme }) => theme.colors.text};
+    color:${({ theme }) => theme.colors?.white};
     &:hover,:focus{
-      color: ${({ theme }) => theme.colors.primary};
+      color: ${({ theme }) => theme.colors?.primary};
     }
   }
   :last-child {
