@@ -6,11 +6,20 @@ import AboutMe from "./aboutme"
 import Projects from "./projects"
 import Experiences from "./experience"
 import Contact from "./contact"
+import { ThemeProvider } from "styled-components"
+import GlobalStyles from "../../globalStyles"
+import Theme from "../../theme"
+
 
 
 
 const IndexPage: React.FC<PageProps> = () => {
+  
+
+
   return (
+    <ThemeProvider theme={Theme}>
+  <GlobalStyles />
     <Layout>
       <Home />
       <AboutMe />
@@ -18,6 +27,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Experiences />
       <Contact />
     </Layout>
+    </ThemeProvider>
   )
 }
 
