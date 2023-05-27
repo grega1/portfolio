@@ -9,7 +9,7 @@ const HeaderWrapper = styled.header`
    background-color: #161313;
   color:${({ theme }) => theme.colors?.white};
   filter: drop-shadow(0px 2px 0px ${({ theme }) => theme.colors?.secondary});
-  min-width: 1440px;
+ max-width: 1440px;
   height: 100px;
   text-align: center;
   font-size: 1.5rem;
@@ -20,6 +20,7 @@ const HeaderWrapper = styled.header`
   padding: 0 100px;
   @media(max-width: 768px) {
   padding: 0 20px;
+  width: 430px;
   }
 `;
 const Logo = styled.div`

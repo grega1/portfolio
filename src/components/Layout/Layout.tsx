@@ -3,13 +3,12 @@ import styled from "styled-components";
 import Header from "../Header";
 import Footer from "../Footer";
 
-
 interface LayoutProps {
   children: ReactNode;
 }
 
 const Wrapper = styled.div`
-   background-color: #161313;
+  background-color: #161313;
   color: ${({ theme }) => theme.colors?.white};
   width: 100%;
   height: auto;
@@ -29,6 +28,7 @@ const Wrapper = styled.div`
   }
   @media (max-width: 768px) {
     width: 100%;
+    min-width: 430px;
     .right-decoration {
       transform: rotate(-90deg);
       right: 400px;
@@ -47,7 +47,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <Wrapper>
       <Header />
 
-      <main>{children}</main>
+      {children}
 
       <Footer />
     </Wrapper>

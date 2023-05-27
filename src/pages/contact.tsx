@@ -21,7 +21,9 @@ const Wrapper = styled.div`
     width:100%;
     padding:0 20px;
     align-items: center;
+
     margin-top: 250px;
+    margin-bottom: 200px;
 
   }
 `;
@@ -35,7 +37,7 @@ const Content = styled.div`
   @media(max-width: 768px) {
     flex-direction: column;
     align-items: center;
-    gap:30px;
+    gap:50px;
 
   }
 `;
