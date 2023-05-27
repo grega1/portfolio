@@ -46,7 +46,7 @@ const PurpleDiv = styled.div`
 
   p {
     font-size: 20px;
-    color:${({ theme }) => theme.colors?.white};
+    color:${({ theme }) => theme.colors.white};
     font-weight: 300;
     line-height: 30px;
   }

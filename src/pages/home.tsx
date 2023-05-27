@@ -8,7 +8,6 @@ const Wrapper = styled.div`
   color:${({ theme }) => theme.colors?.white};
   max-width: 1440px;
   display: flex;
-  align-items: center;
   justify-content: center;
   padding-top: 100px;
   height: 80vh;
@@ -43,7 +42,7 @@ export const Content = styled.div`
     line-height: 32px;
     color:${({ theme }) => theme.colors?.white};
   }
-  :last-child {
+  button {
     margin: 100px auto 0;
   }
   @media(max-width: 768px) {
