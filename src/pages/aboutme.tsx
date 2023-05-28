@@ -5,8 +5,8 @@ import Title from "../components/Title";
 import StyledDecorations from "../components/Decorations";
 
 const Wrapper = styled.div`
-   background-color: #161313;
-  color:${({ theme }) => theme.colors?.white};
+  background-color: #161313;
+  color: ${({ theme }) => theme.colors?.white};
   max-width: 1200px;
   width: 100%;
   display: flex;
@@ -20,7 +20,7 @@ const Wrapper = styled.div`
     max-width: 430px;
     width: 100%;
     height: auto;
-    
+
     gap: 20px;
     align-items: center;
   }
@@ -42,13 +42,13 @@ const PurpleDiv = styled.div`
   display: flex;
   flex-direction: column;
   gap: 30px;
-  border-radius:30px;
+  border-radius: 30px;
   position: relative;
   padding: 60px;
 
   p {
     font-size: 20px;
-    color:${({ theme }) => theme.colors?.white};
+    color: ${({ theme }) => theme.colors?.white};
     font-weight: 300;
     line-height: 30px;
   }
@@ -74,12 +74,13 @@ const PurpleDiv = styled.div`
   }
   @media (max-width: 768px) {
     width: 100%;
-    padding:30px;
+    padding: 30px;
     align-items: center;
     height: auto;
     justify-content: center;
+    border-radius: 0px;
     border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+    border-top-right-radius: 30px;
 
     p {
       font-size: 16px;
@@ -87,7 +88,7 @@ const PurpleDiv = styled.div`
     }
   }
   ul {
-    font-size:12px;
+    font-size: 12px;
   }
 `;
 const ImageWrapper = styled.div`
@@ -118,7 +119,7 @@ const ImageWrapper = styled.div`
       height: 325px;
       position: absolute;
       top: 48%;
-      left:9%;
+      left: 9%;
     }
   }
 `;
@@ -134,7 +135,6 @@ const YellowDiv = styled.div`
   }
 `;
 const AboutMe = () => {
-
   return (
     <Wrapper>
       <Title text=".About Me" />

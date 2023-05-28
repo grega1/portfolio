@@ -8,7 +8,7 @@ import useMobile from "../hook/useMobile";
 
 const Wrapper = styled.div`
   background-color: #161313;
-  color:${({ theme }) => theme.colors?.white};
+  color: ${({ theme }) => theme.colors?.white};
   max-width: 1200px;
   display: flex;
   flex-direction: column;
@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   justify-content: center;
   margin-top: 200px;
   height: 90vh;
- 
+
   @media (max-width: 768px) {
     max-width: 430px;
     width: 100%;
@@ -30,10 +30,10 @@ const Content = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  width: 1200;
+  width: 100%;
   height: 800px;
   @media (max-width: 768px) {
-    width: 410px;
+    width: 100%;
     padding-left: 20px;
     align-items: center;
     justify-items: center;
@@ -52,7 +52,7 @@ const Projects = () => {
           <Card {...card} />
         ))}
       </Content>
-      {isMobile ? (<div></div>) : (<Button text="Show More" />)}
+      {isMobile ? <div></div> : <Button text="Show More" />}
     </Wrapper>
   );
 };
