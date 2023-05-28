@@ -17,6 +17,7 @@ const Wrapper = styled.div`
 margin-top: 200px;
   height: 90vh;
   @media(max-width: 768px) {
+    max-width: 430px;
     width:100%;
     height: auto;
 
@@ -34,7 +35,7 @@ const Content = styled.div`
  width: 100%;
   flex-direction: column;
   @media(max-width: 768px) {
-    max-width:430px;
+    max-width:400px;
     width: 100%;
     height: auto;
     grid-template-columns: repeat(6, 1fr);
