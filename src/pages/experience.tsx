@@ -29,9 +29,10 @@ const Content = styled.div`
     grid-template-columns: repeat(3, 1fr);
     gap:40px;
   height: 750px;
-  max-width: 1200px;
+ width: 1200px;
   flex-direction: column;
   @media(max-width: 768px) {
+    max-width:400px;
     width: 100%;
     height: auto;
     grid-template-columns: repeat(6, 1fr);

@@ -9,6 +9,8 @@ import Contact from "./contact"
 import { ThemeProvider } from "styled-components"
 import GlobalStyles from "../../globalStyles"
 import Theme from "../../theme"
+import Footer from "../components/Footer"
+import Header from "../components/Header"
 
 
 
@@ -20,6 +22,7 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <ThemeProvider theme={Theme}>
   <GlobalStyles />
+  <Header />
     <Layout>
       <Home />
       <AboutMe />
@@ -27,6 +30,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Experiences />
       <Contact />
     </Layout>
+    <Footer/>
     </ThemeProvider>
   )
 }

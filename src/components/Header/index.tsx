@@ -9,20 +9,32 @@ const HeaderWrapper = styled.header`
    background-color: #161313;
   color:${({ theme }) => theme.colors?.white};
   filter: drop-shadow(0px 2px 0px ${({ theme }) => theme.colors?.secondary});
- max-width: 1440px;
+  width:100%;
   height: 100px;
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
-  justify-content: space-between;
+  justify-content: center;
   display: flex;
   align-items: center;
   padding: 0 100px;
   @media(max-width: 768px) {
-  padding: 0 20px;
-  width: 430px;
+    width: 100%;
   }
 `;
+const Content=styled.div`
+  min-width: 1200px;
+  background-color:${({ theme }) => theme.colors?.background};
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media(max-width: 768px) {
+  min-width: 430px;
+  padding: 0 30px;
+  }
+`
 const Logo = styled.div`
   color:${({ theme }) => theme.colors?.white};
   font-size: 1.5rem;
@@ -54,6 +66,7 @@ const Header = () => {
   const isMobile = useMobile();
   return (
     <HeaderWrapper>
+      <Content>
       <Logo> G R E G O </Logo>
      {isMobile? (<></>) :(<Nav>
         <Link to="/">About Me</Link>
@@ -61,6 +74,7 @@ const Header = () => {
         <Link to="/">Experience</Link>
         <Button text="Resume"></Button>
       </Nav>)}
+      </Content>
     </HeaderWrapper>
   );
 };

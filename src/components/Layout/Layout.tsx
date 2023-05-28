@@ -43,14 +43,6 @@ const Wrapper = styled.div`
 `;
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-  return (
-    <Wrapper>
-      <Header />
-
-      {children}
-
-      <Footer />
-    </Wrapper>
-  );
+  return <Wrapper>{children}</Wrapper>;
 };
 export default Layout;

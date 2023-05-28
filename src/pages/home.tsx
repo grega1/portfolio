@@ -24,6 +24,7 @@ export const Content = styled.div`
   margin-bottom: 100px;
   align-items: flex-start;
   justify-content: space-between;
+  
   gap: 30px;
   span {
     font-size: 20px;

@@ -1,4 +1,3 @@
-
 import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
@@ -6,14 +5,28 @@ import linkedin from "../../images/linkedin.svg";
 import github from "../../images/github.svg";
 import twitter from "../../images/twitter.svg";
 const FooterWrapper = styled.footer`
-   background-color: #161313;
-  color:${({ theme }) => theme.colors?.white};
-  min-width: 1440px;
+  background-color: #161313;
+  color: ${({ theme }) => theme.colors?.white};
+width:100%;
   height: 140px;
   display: flex;
   align-items: center;
   padding: 0 100px;
   border-top: 2px solid ${({ theme }) => theme.colors?.secondary};
+  justify-content: center;
+  @media (max-width: 768px) {
+    align-items: center
+    flex-direction: column;
+    height: auto;
+    padding: 30px;
+  }
+`;
+const Content = styled.div`
+  min-width: 1200px;
+  background-color: ${({ theme }) => theme.colors?.background};
+  height: 100%;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   @media (max-width: 768px) {
     min-width: 400px;
@@ -21,11 +34,11 @@ const FooterWrapper = styled.footer`
     flex-direction: column;
     height: auto;
     gap: 30px;
-    padding: 30px 0;
   }
+
 `;
 const Credits = styled.div`
-  color:${({ theme }) => theme.colors?.white};
+  color: ${({ theme }) => theme.colors?.white};
   font-size: 12px;
   font-weight: 500;
   display: flex;
@@ -41,17 +54,21 @@ const Credits = styled.div`
   }
 `;
 const Social = styled.ul`
-  color:${({ theme }) => theme.colors?.white};
+  color: ${({ theme }) => theme.colors?.white};
   font-size: 12px;
   display: flex;
   flex-direction: column;
-  gap:10px;
-  div{display:flex;align-items:center;gap:10px;}
+  gap: 10px;
+  div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
   li {
     list-style: none;
     font-size: 12px;
-    a{
-        text-decoration: none;
+    a {
+      text-decoration: none;
     }
   }
 `;
@@ -65,7 +82,7 @@ const Links = styled.ul`
     font-size: 12px;
     a {
       text-decoration: none;
-      color:${({ theme }) => theme.colors?.white};
+      color: ${({ theme }) => theme.colors?.white};
       &:hover,
       :focus {
         color: ${({ theme }) => theme.colors?.primary};
@@ -78,6 +95,7 @@ const Links = styled.ul`
 const Footer = () => {
   return (
     <FooterWrapper>
+      <Content>
       <Credits>
         <p>
           Developed by <span className="purpleSpan">Adriano Grego</span>.
@@ -99,13 +117,27 @@ const Footer = () => {
           <Link to="/">Projects</Link>
         </li>
       </Links>
-      <Social>Socials:
+      <Social>
+        Socials:
         <div>
-        <li><Link to="/" ><img src={linkedin} alt="linkedin"/></Link></li>
-        <li><Link to="/" ><img src={github} alt="github"/></Link></li>
-        <li><Link to="/" ><img src={twitter} alt="twitter"/></Link></li>
+          <li>
+            <Link to="/">
+              <img src={linkedin} alt="linkedin" />
+            </Link>
+          </li>
+          <li>
+            <Link to="/">
+              <img src={github} alt="github" />
+            </Link>
+          </li>
+          <li>
+            <Link to="/">
+              <img src={twitter} alt="twitter" />
+            </Link>
+          </li>
         </div>
       </Social>
+      </Content>
     </FooterWrapper>
   );
 };
