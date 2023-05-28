@@ -62,8 +62,8 @@ export const Content = styled.div`
     line-height: 32px;
     color:${({ theme }) => theme.colors?.white};
   }
-  :last-child {
-    margin: 30px auto 0;
+  button {
+    margin: 50px auto 0;
   }
   }
 `;
