@@ -16,6 +16,10 @@ const HeaderWrapper = styled.header`
   font-weight: bold;
   justify-content: center;
   display: flex;
+  position: sticky;
+  left:0;
+  top:0;
+  z-index:3;
   align-items: center;
   padding: 0 100px;
   @media(max-width: 768px) {

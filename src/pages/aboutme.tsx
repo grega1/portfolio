@@ -16,7 +16,7 @@ const Wrapper = styled.div`
   gap: 30px;
   height: 90vh;
   @media (max-width: 768px) {
-    width: 100%;
+    max-width: 430px;
     height: auto;
     padding: 0 20px;
     gap: 20px;
