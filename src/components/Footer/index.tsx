@@ -15,7 +15,7 @@ width:100%;
   border-top: 2px solid ${({ theme }) => theme.colors?.secondary};
   justify-content: center;
   @media (max-width: 768px) {
-    align-items: center
+    align-items: center;
     flex-direction: column;
     height: auto;
     padding: 30px;
