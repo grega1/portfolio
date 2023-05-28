@@ -22,7 +22,6 @@ const Wrapper = styled.div`
     max-width: 430px;
     width: 100%;
     height: auto;
-    padding: 0 20px;
     align-items: center;
     margin-top: 150px;
   }
@@ -34,7 +33,10 @@ const Content = styled.div`
   width: 1200;
   height: 800px;
   @media (max-width: 768px) {
-    width: 400px;
+    width: 430px;
+    padding-left: 20px;
+    align-items: center;
+    justify-items: center;
     height: auto;
     grid-template-columns: repeat(6, 1fr);
     overflow-x: scroll;

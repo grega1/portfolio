@@ -19,7 +19,7 @@ margin-top: 200px;
   @media(max-width: 768px) {
     width:100%;
     height: auto;
-    padding: 0 20px;
+
     align-items: center;
     margin-top: 150px;
 
@@ -34,7 +34,7 @@ const Content = styled.div`
  width: 100%;
   flex-direction: column;
   @media(max-width: 768px) {
-    max-width:400px;
+    max-width:430px;
     width: 100%;
     height: auto;
     grid-template-columns: repeat(6, 1fr);

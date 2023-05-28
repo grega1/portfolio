@@ -20,7 +20,7 @@ const Wrapper = styled.div`
     max-width: 430px;
     width: 100%;
     height: auto;
-    padding: 0 20px;
+    
     gap: 20px;
     align-items: center;
   }
@@ -32,7 +32,7 @@ const Content = styled.div`
   flex-direction: column;
   position: relative;
   @media (max-width: 768px) {
-    width: 390px;
+    width: 400px;
   }
 `;
 const PurpleDiv = styled.div`
