@@ -38,6 +38,7 @@ const Content = styled.div`
     max-width:400px;
     width: 100%;
     height: auto;
+    gap:20px;
     grid-template-columns: repeat(6, 1fr);
     overflow-x: scroll;
    justify-items: center;

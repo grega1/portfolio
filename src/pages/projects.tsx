@@ -33,7 +33,7 @@ const Content = styled.div`
   width: 1200;
   height: 800px;
   @media (max-width: 768px) {
-    width: 430px;
+    width: 410px;
     padding-left: 20px;
     align-items: center;
     justify-items: center;

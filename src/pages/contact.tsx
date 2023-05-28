@@ -53,6 +53,7 @@ const CTA = styled.div`
     text-align: left;
     font-weight: 400;
     line-height: 40px;
+    padding:0 20px;
   }
   @media(max-width: 768px) {
     width:380px;
