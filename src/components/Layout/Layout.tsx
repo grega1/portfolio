@@ -28,7 +28,6 @@ const Wrapper = styled.div`
   }
   @media (max-width: 768px) {
     width: 100%;
-    min-width: 430px;
     .right-decoration {
       transform: rotate(-90deg);
       right: 400px;

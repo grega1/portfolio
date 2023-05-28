@@ -27,7 +27,8 @@ const HeaderWrapper = styled.header`
   }
 `;
 const Content=styled.div`
-  min-width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   background-color:${({ theme }) => theme.colors?.background};
   height: 100%;
   display: flex;
@@ -35,7 +36,8 @@ const Content=styled.div`
   justify-content: space-between;
 
   @media(max-width: 768px) {
-  min-width: 430px;
+  max-width: 430px;
+  width: 100%;
   padding: 0 30px;
   }
 `

@@ -5,6 +5,11 @@ const TitleWrapper = styled.h1`
   color: ${({ theme }) => theme.colors?.secondary};
   font-size:32px;
   border-radius:50px;
+  width:100%;
+  text-align: left;
+  @media(max-width:768px){
+    text-align: center;
+  }
 `;
 interface TitleProps {
     text: string;

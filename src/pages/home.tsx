@@ -6,7 +6,7 @@ import StyledDecorations from "../components/Decorations";
 const Wrapper = styled.div`
    background-color: #161313;
   color:${({ theme }) => theme.colors?.white};
-  max-width: 1440px;
+  max-width: 1200px;
   display: flex;
   justify-content: center;
   padding-top: 150px;

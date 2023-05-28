@@ -9,7 +9,7 @@ import useMobile from "../hook/useMobile";
 const Wrapper = styled.div`
   background-color: #161313;
   color:${({ theme }) => theme.colors?.white};
-  max-width: 1440px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -17,7 +17,9 @@ const Wrapper = styled.div`
   justify-content: center;
   margin-top: 200px;
   height: 90vh;
+ 
   @media (max-width: 768px) {
+    max-width: 430px;
     width: 100%;
     height: auto;
     padding: 0 20px;

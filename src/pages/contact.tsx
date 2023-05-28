@@ -8,16 +8,18 @@ import qrcode from "../images/qrcode.png";
 const Wrapper = styled.div`
    background-color: #161313;
   color:  ${({ theme }) => theme.colors?.white};
-  max-width: 1440px;
+  max-width: 1200px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   margin-top: 200px;
   margin-bottom: 100px;
   gap: 20px;
   height: 400px;
   @media(max-width: 768px) {
+    max-width: 430px;
     width:100%;
     padding:0 20px;
     align-items: center;

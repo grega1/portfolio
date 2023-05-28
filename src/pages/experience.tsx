@@ -7,10 +7,11 @@ import { circleCardMockup } from "../components/CircularCard/circleCard-mockup";
 const Wrapper = styled.div`
    background-color: #161313;
   color:${({ theme }) => theme.colors?.white};
-  max-width: 1440px;
+  max-width: 1200px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap:20px;
   justify-content: center;
 margin-top: 200px;
@@ -29,7 +30,8 @@ const Content = styled.div`
     grid-template-columns: repeat(3, 1fr);
     gap:40px;
   height: 750px;
- width: 1200px;
+ max-width: 1200px;
+ width: 100%;
   flex-direction: column;
   @media(max-width: 768px) {
     max-width:400px;

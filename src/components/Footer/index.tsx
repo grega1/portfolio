@@ -22,14 +22,15 @@ width:100%;
   }
 `;
 const Content = styled.div`
-  min-width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   background-color: ${({ theme }) => theme.colors?.background};
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   @media (max-width: 768px) {
-    min-width: 400px;
+    width: 100%;   
     max-width: 430px;
     align-items: start;
     flex-direction: column;
