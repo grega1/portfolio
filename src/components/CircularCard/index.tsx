@@ -35,6 +35,7 @@ interface CircularCardProps {
 }
 
 const CircularCard = ({ title, description, icon }: CircularCardProps) => {
+  
   return (
     <CircularCardWrapper>
       <img src={icon.url} alt={icon.name} /><h2>{title}</h2>

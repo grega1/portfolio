@@ -6,6 +6,12 @@ import nextjs from "../../images/next.svg";
 import html from "../../images/html.svg";
 import css from "../../images/css.svg";
 import figma from "../../images/figma.svg";
+import quadro from "../../images/o-quadro.png";
+import journey from "../../images/journey.png";
+import inscriptions from "../../images/inscriptions.png";
+import virus from "../../images/virus.png";
+import p5 from "../../images/p5.png";
+import hierramientas from "../../images/hierramientas.png";
 
 
 export const cardMockup = [
@@ -25,6 +31,7 @@ export const cardMockup = [
       },
     ],
     link: "https://www.oquadro.net/",
+    cover:quadro,
   },
   {
     title: "Inscriptions Upon the Whater",
@@ -41,6 +48,7 @@ export const cardMockup = [
       },
     ],
     link: "https://phase2.hermapartprojects.org/inscriptions-upon-the-water",
+    cover:inscriptions,
   },
   {
     title: "A journey to Iran",
@@ -57,6 +65,7 @@ export const cardMockup = [
       },
     ],
     link: "https://phase2.hermapartprojects.org/a-journey-to-iran",
+    cover:journey,
   },
   {
     title: "Whack a Virus",
@@ -80,6 +89,7 @@ export const cardMockup = [
           },
     ],
     link: "https://grega1.github.io/whack-a-virus/",
+    cover:virus,
   },
   {
     title: "Periscopio P5",
@@ -104,6 +114,7 @@ export const cardMockup = [
       },
     ],
     link: "https://p5-ten.vercel.app/",
+    cover:p5,
   },
   {
     title: "Hierramientas Pedagógicas",
@@ -124,5 +135,6 @@ export const cardMockup = [
       },
     ],
     link: "https://www.comisiondelaverdad.co/pedagogia",
+    cover:hierramientas,
   },
 ];

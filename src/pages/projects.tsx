@@ -44,6 +44,8 @@ const Content = styled.div`
 `;
 const Projects = () => {
   const isMobile = useMobile();
+
+
   return (
     <Wrapper>
       <Title text=".Projects" />
