@@ -2,6 +2,7 @@ import * as React from "react";
 import styled from "styled-components";
 import Button from "../components/Button";
 import Title from "../components/Title";
+import profile from "../images/profile.png";
 import StyledDecorations from "../components/Decorations";
 
 const Wrapper = styled.div`
@@ -159,7 +160,7 @@ const AboutMe = () => {
             frontend expertise, I'm here to contribute to your success.
           </p>
           <ImageWrapper>
-            <img src="https://i.imgur.com/2ZQ4Z5E.png" alt="me" />
+            <img src={profile} alt="me" />
             <YellowDiv />
           </ImageWrapper>
           <div>

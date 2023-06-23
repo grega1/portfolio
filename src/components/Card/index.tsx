@@ -111,7 +111,7 @@ const Card = ({ title, description, icons, link, cover }: CardProps) => {
           </div>
         </>
       ) : (
-        <><h3 style={{ textAlign: "center", width: "100%" }}>{title}</h3> <img style={{width:'300px', height:'250px', borderRadius:'10px', margin:'20px auto'}}src={cover} /> </>
+        <><img style={{width:'100%', height:'100%', objectFit:"cover", borderRadius:"10px"}}src={cover} /> </>
       )}
     </CardWrapper>
   );
