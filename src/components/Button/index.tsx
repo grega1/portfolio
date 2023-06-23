@@ -27,6 +27,7 @@ const ButtonWrapper = styled.button`
 interface ButtonProps {
     text: string;
     onClick?: () => void;
+   
 }
 
 const Button = ({text, onClick}:ButtonProps) => {

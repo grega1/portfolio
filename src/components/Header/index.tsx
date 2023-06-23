@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import Button from "../Button";
 import useMobile from "../../hook/useMobile";
+import resume from "../../resume.pdf";
 import {useTheme} from "styled-components"
 
 const HeaderWrapper = styled.header`
@@ -69,7 +70,13 @@ const Nav = styled.div`
 `;
 
 const Header = () => {
-  const isMobile = useMobile();
+  const isMobile = useMobile(); 
+  const handleClick = () => {
+    const googleDriveLink = 'https://docs.google.com/document/d/1goTh6iq9V_ub_k0IHip56JXM8FLVNzThvmTBCf05M0o/edit?usp=sharing';
+    window.open(googleDriveLink, '_blank');
+  };
+  
+  
   return (
     <HeaderWrapper>
       <Content>
@@ -78,7 +85,7 @@ const Header = () => {
         <Link to="/">About Me</Link>
         <Link to="/">Projects</Link>
         <Link to="/">Experience</Link>
-        <Button text="Resume"></Button>
+        <Button onClick={handleClick} text="Resume"></Button>
       </Nav>)}
       </Content>
     </HeaderWrapper>
