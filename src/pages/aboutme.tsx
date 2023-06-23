@@ -110,6 +110,7 @@ const ImageWrapper = styled.div`
     left: 0;
     z-index: 1;
     border-radius: 10px;
+    object-fit: cover;
   }
   @media (max-width: 768px) {
     width: 325px;
