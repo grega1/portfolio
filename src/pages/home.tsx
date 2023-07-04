@@ -69,6 +69,13 @@ export const Content = styled.div`
 `;
 
 const Home = () => {
+  const redirectToWhatsApp = (message: string): (() => void) => {
+    return () => {
+      const phoneNumber: string = "+4407930849068";
+      const encodedMessage: string = encodeURIComponent(message);
+      window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, `_blank`);
+    };
+  };
   return (
     <Wrapper>
       <Content>
@@ -80,7 +87,7 @@ const Home = () => {
           Front-End Development. Passionate for building beautiful, useful and
           accessible things. Actually working on Freelance Projects.
         </p>
-        <Button text="Reach me" />
+        <Button text="Reach me" onClick={redirectToWhatsApp("Hi, I'm interested in your work")}/>
       </Content>
     </Wrapper>
   );
