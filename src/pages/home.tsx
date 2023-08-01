@@ -24,7 +24,17 @@ export const Content = styled.div`
   margin-bottom: 100px;
   align-items: flex-start;
   justify-content: space-between;
-  
+  @keyframes fadeUpAnimation {
+    from{
+      opacity: 0; /* Start with opacity 0 to be hidden initially */
+  transform: translateY(100px); /* Move the element 20px down initially */
+    }
+    to {
+    opacity: 1; /* At the end of the animation, opacity becomes 1 (fully visible) */
+    transform: translateY(0); /* The element returns to its original position */
+  }
+}
+animation: fadeUpAnimation 1.5s ease-out forwards; 
   gap: 30px;
   span {
     font-size: 20px;

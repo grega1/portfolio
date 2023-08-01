@@ -11,6 +11,18 @@ const CircularCardWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  @keyframes showingByCenter{
+    0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); /* O componente terá 100% do tamanho original quando a animação terminar */
+  }
+  
+  }
+  animation: showingByCenter 2s ease-out;
   img{
     margin: 0 auto;
   }
@@ -23,6 +35,16 @@ const CircularCardWrapper = styled.div`
     font-size: 16px;
     width:250px;
   }
+  &:hover,
+  :focus {
+    border-color: ${({ theme }) => theme.colors?.primary};
+    color:${({ theme }) => theme.colors?.primary};
+
+    box-shadow: 4px 4px 0 0 ${({ theme }) => theme.colors?.primary};
+    transform: translate(-5px, -5px);
+    transition: all 0.25s ease-in-out;
+    }
+  
 `;
 
 interface CircularCardProps {

@@ -46,7 +46,19 @@ const PurpleDiv = styled.div`
   border-radius: 30px;
   position: relative;
   padding: 60px;
+ 
+  @keyframes showingByLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); 
+  }
 
+}
+animation: showingByLeft 1s ease-out;
   p {
     font-size: 20px;
     color: ${({ theme }) => theme.colors?.white};
@@ -101,14 +113,26 @@ const ImageWrapper = styled.div`
   position: absolute;
   border-radius: 10px;
   top: 17%;
-  left: 95%;
+  left: 57%;
+  @keyframes showingByRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); 
+  }
+
+}
+animation: showingByRight 1s ease-out;
   img {
     width: 450px;
     height: 450px;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 3;
     border-radius: 10px;
     object-fit: cover;
   }
@@ -131,6 +155,7 @@ const YellowDiv = styled.div`
   width: 450px;
   position: relative;
   border-radius: 10px;
+  z-index:2;
   @media (max-width: 768px) {
     width: 325px;
     height: 325px;
@@ -141,6 +166,10 @@ const AboutMe = () => {
     <Wrapper>
       <Title text=".About Me" />
       <Content>
+      <ImageWrapper>
+            <img src={profile} alt="me" />
+            <YellowDiv />
+          </ImageWrapper>
         <PurpleDiv>
           <p>
             Hello! I'm <span>Adriano Grego</span>, a passionate web developer
@@ -160,10 +189,7 @@ const AboutMe = () => {
             If you're seeking a <span>dedicated professional</span> with
             frontend expertise, I'm here to contribute to your success.
           </p>
-          <ImageWrapper>
-            <img src={profile} alt="me" />
-            <YellowDiv />
-          </ImageWrapper>
+          
           <div>
             Few technologies that I recently worked with:
             <ul>

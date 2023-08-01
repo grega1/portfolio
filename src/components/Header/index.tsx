@@ -20,9 +20,20 @@ const HeaderWrapper = styled.header`
   position: sticky;
   left:0;
   top:0;
-  z-index:3;
+  z-index:4;
   align-items: center;
   padding: 0 100px;
+  @keyframes fadeDownAnimation {
+    from{
+      opacity: 0; 
+  transform: translateY(-20px); 
+    }
+    to {
+    opacity: 1; 
+    transform: translateY(0px); 
+  }
+}
+animation: fadeDownAnimation 1s ease-out forwards; 
   @media(max-width: 768px) {
     width: 100%;
   }
@@ -35,6 +46,7 @@ const Content=styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 
   @media(max-width: 768px) {
   max-width: 430px;

@@ -123,17 +123,17 @@ const Footer = () => {
         Socials:
         <div>
           <li>
-            <Link to="/">
+            <Link to="https://www.linkedin.com/in/adrigrego1/">
               <img src={linkedin} alt="linkedin" />
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="https://github.com/grega1">
               <img src={github} alt="github" />
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="https://twitter.com">
               <img src={twitter} alt="twitter" />
             </Link>
           </li>
