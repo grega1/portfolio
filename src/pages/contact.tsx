@@ -5,6 +5,7 @@ import Title from "../components/Title";
 // @ts-ignore
 import qrcode from "../images/qrcode.png";
 
+
 const Wrapper = styled.div`
    background-color: #161313;
   color:  ${({ theme }) => theme.colors?.white};
@@ -69,6 +70,7 @@ const QrCode = styled.img`
 `;
 
 const Contact = () => {
+
   const redirectToWhatsApp = (message: string): (() => void) => {
     return () => {
       const phoneNumber: string = "+4407930849068";
@@ -77,7 +79,7 @@ const Contact = () => {
     };
   };
   return (
-    <Wrapper>
+    <Wrapper >
     
       <Content>
         <CTA>

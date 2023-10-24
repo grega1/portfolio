@@ -92,7 +92,7 @@ const Card = ({ title, description, icons, link, cover }: CardProps) => {
                 fill="none"
                 stroke="currentColor"
                 stroke-width="2"
-                stroke-linecap="round"
+                strokeLinecap="round"
                 stroke-linejoin="round"
               >
                 <title>External Link</title>

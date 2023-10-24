@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import Button from "../components/Button";
-import StyledDecorations from "../components/Decorations";
+
 
 const Wrapper = styled.div`
    background-color: #161313;
@@ -79,15 +79,16 @@ animation: fadeUpAnimation 1.5s ease-out forwards;
 `;
 
 const Home = () => {
+
   const redirectToWhatsApp = (message: string): (() => void) => {
     return () => {
-      const phoneNumber: string = "+4407930849068";
+      const phoneNumber: string = "+351929160090";
       const encodedMessage: string = encodeURIComponent(message);
       window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, `_blank`);
     };
   };
   return (
-    <Wrapper>
+    <Wrapper >
       <Content>
         <span>Hey, There.</span>
         <h1>I am Adriano Grego.</h1>

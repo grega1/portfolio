@@ -3,7 +3,8 @@ import styled from "styled-components";
 import Button from "../components/Button";
 import Title from "../components/Title";
 import profile from "../images/profile.png";
-import StyledDecorations from "../components/Decorations";
+
+
 
 const Wrapper = styled.div`
   background-color: #161313;
@@ -161,7 +162,9 @@ const YellowDiv = styled.div`
     height: 325px;
   }
 `;
+
 const AboutMe = () => {
+
   return (
     <Wrapper>
       <Title text=".About Me" />
