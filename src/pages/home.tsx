@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   padding-top: 150px;
-  height: 80vh;
+
   @media(max-width: 768px) {
     width:100%;
     padding: 100px 20px 0;

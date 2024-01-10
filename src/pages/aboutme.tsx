@@ -17,7 +17,6 @@ const Wrapper = styled.div`
   justify-content: center;
   margin-top: 100px;
   gap: 30px;
-  height: 90vh;
   @media (max-width: 768px) {
     max-width: 430px;
     width: 100%;
@@ -141,12 +140,11 @@ animation: showingByRight 1s ease-out;
     width: 325px;
     height: 325px;
     position: static;
+    display: none;
     img {
       width: 325px;
       height: 325px;
-      position: absolute;
-      top: 48%;
-      left: 9%;
+      position: absolute
     }
   }
 `;
