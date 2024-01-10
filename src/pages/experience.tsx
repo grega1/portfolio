@@ -4,6 +4,7 @@ import Title from "../components/Title";
 import CircularCard from "../components/CircularCard";
 import { circleCardMockup } from "../components/CircularCard/circleCard-mockup";
 
+
 const Wrapper = styled.div`
    background-color: #161313;
   color:${({ theme }) => theme.colors?.white};
@@ -51,8 +52,9 @@ const Content = styled.div`
 `;
 
 const Experiences = () => {
+  
   return (
-    <Wrapper>
+    <Wrapper >
       <Title text=".What I Do?" />
       <Content>
         {circleCardMockup.map((card) => (
