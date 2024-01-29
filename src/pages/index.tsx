@@ -12,17 +12,27 @@ import Theme from "../../theme";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
+import { ScrollAnimation } from "../components/ScrollAnimation/ScrollAnimation";
+
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <ThemeProvider theme={Theme}>
       <GlobalStyles />
       <Header />
       <Layout>
+        <ScrollAnimation>
         <Home />
+        </ScrollAnimation>
         <AboutMe />
+        <ScrollAnimation>
         <Projects />
+        </ScrollAnimation>
+        <ScrollAnimation>
         <Experiences />
+        </ScrollAnimation>
+        <ScrollAnimation>
         <Contact />
+        </ScrollAnimation>
       </Layout>
       <Footer />
     </ThemeProvider>
