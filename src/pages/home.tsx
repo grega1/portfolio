@@ -26,12 +26,12 @@ export const Content = styled.div`
   justify-content: space-between;
   @keyframes fadeUpAnimation {
     from{
-      opacity: 0; /* Start with opacity 0 to be hidden initially */
-  transform: translateY(100px); /* Move the element 20px down initially */
+      opacity: 0; 
+  transform: translateY(100px); 
     }
     to {
-    opacity: 1; /* At the end of the animation, opacity becomes 1 (fully visible) */
-    transform: translateY(0); /* The element returns to its original position */
+    opacity: 1; 
+    transform: translateY(0); 
   }
 }
 animation: fadeUpAnimation 1.5s ease-out forwards; 
