@@ -9,29 +9,30 @@ const Wrapper = styled.div`
   max-width: 1200px;
   display: flex;
   justify-content: center;
-  padding-top: 150px;
+  height: auto;
+  padding-top:200px;
 
   @media(max-width: 768px) {
     width:100%;
-    padding: 100px 20px 0;
+   padding-top:150px;
+    height: auto;
   }
 `;
 export const Content = styled.div`
   display: flex;
-  height: 400px;
+  height: auto;
   flex-direction: column;
   width:900px;
-  margin-bottom: 100px;
   align-items: flex-start;
   justify-content: space-between;
   @keyframes fadeUpAnimation {
     from{
-      opacity: 0; /* Start with opacity 0 to be hidden initially */
-  transform: translateY(100px); /* Move the element 20px down initially */
+      opacity: 0; 
+  transform: translateY(100px); 
     }
     to {
-    opacity: 1; /* At the end of the animation, opacity becomes 1 (fully visible) */
-    transform: translateY(0); /* The element returns to its original position */
+    opacity: 1; 
+    transform: translateY(0); 
   }
 }
 animation: fadeUpAnimation 1.5s ease-out forwards; 

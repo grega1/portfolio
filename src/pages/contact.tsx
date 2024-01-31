@@ -15,8 +15,8 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 200px;
-  margin-bottom: 100px;
+  /* margin-top: 200px;
+  margin-bottom: 100px; */
   gap: 20px;
   height: 400px;
   @media(max-width: 768px) {
@@ -24,9 +24,8 @@ const Wrapper = styled.div`
     width:100%;
     padding:0 20px;
     align-items: center;
-
-    margin-top: 250px;
-    margin-bottom: 200px;
+    height: auto;
+    margin-bottom: 120px;
 
   }
 `;
@@ -40,7 +39,7 @@ const Content = styled.div`
   @media(max-width: 768px) {
     flex-direction: column;
     align-items: center;
-    gap:50px;
+    gap:100px;
 
   }
 `;

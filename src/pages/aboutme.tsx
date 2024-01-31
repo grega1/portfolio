@@ -3,10 +3,11 @@ import styled from "styled-components";
 import Button from "../components/Button";
 import Title from "../components/Title";
 import profile from "../images/profile.png";
+import {motion, useAnimation, useInView } from "framer-motion";
 
 
 
-const Wrapper = styled.div`
+const Wrapper = styled(motion.div)`
   background-color: #161313;
   color: ${({ theme }) => theme.colors?.white};
   max-width: 1200px;
@@ -15,12 +16,14 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
+  border:none;
+  /* margin-top: 100px; */
   gap: 30px;
   @media (max-width: 768px) {
     max-width: 430px;
     width: 100%;
     height: auto;
+    margin-bottom: 50px;
 
     gap: 20px;
     align-items: center;
@@ -162,9 +165,27 @@ const YellowDiv = styled.div`
 `;
 
 const AboutMe = () => {
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const mainControls = useAnimation();
+  const slideAnimations = useAnimation();
+
+  React.useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+      slideAnimations.start("visible");
+    }
+  }, [isInView]);
 
   return (
-    <Wrapper>
+    <Wrapper  ref ={ref} variants={{
+      hidden: { opacity: 0, y:0 },
+      visible: { opacity: 1, y:75 },
+    }}
+    initial="hidden"
+    transition={{duration:1, delay:0.25}}
+    animate={mainControls}>
       <Title text=".About Me" />
       <Content>
       <ImageWrapper>

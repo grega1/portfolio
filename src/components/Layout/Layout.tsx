@@ -16,6 +16,8 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap:250px;
+  padding-bottom:200px;
   .right-decoration {
     position: absolute;
     right: 90px;
@@ -28,6 +30,8 @@ const Wrapper = styled.div`
   }
   @media (max-width: 768px) {
     width: 100%;
+    gap:150px;
+    padding-bottom:100px;
     .right-decoration {
       transform: rotate(-90deg);
       right: 400px;

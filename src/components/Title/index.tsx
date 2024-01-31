@@ -7,6 +7,7 @@ const TitleWrapper = styled.h1`
   border-radius:50px;
   width:100%;
   text-align: left;
+  padding-bottom:0.5rem;
   @media(max-width:768px){
     text-align: center;
   }
