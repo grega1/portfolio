@@ -9,19 +9,20 @@ const Wrapper = styled.div`
   max-width: 1200px;
   display: flex;
   justify-content: center;
-  padding-top: 150px;
+  height: auto;
+  padding-top:200px;
 
   @media(max-width: 768px) {
     width:100%;
-    padding: 100px 20px 0;
+   padding-top:150px;
+    height: auto;
   }
 `;
 export const Content = styled.div`
   display: flex;
-  height: 400px;
+  height: auto;
   flex-direction: column;
   width:900px;
-  margin-bottom: 100px;
   align-items: flex-start;
   justify-content: space-between;
   @keyframes fadeUpAnimation {

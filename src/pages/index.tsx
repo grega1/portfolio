@@ -23,7 +23,9 @@ const IndexPage: React.FC<PageProps> = () => {
         <ScrollAnimation>
         <Home />
         </ScrollAnimation>
+        {/* <ScrollAnimation width="100%" > */}
         <AboutMe />
+        {/* </ScrollAnimation> */}
         <ScrollAnimation>
         <Projects />
         </ScrollAnimation>

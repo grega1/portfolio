@@ -15,7 +15,8 @@ const Wrapper = styled.div`
   align-items: flex-start;
   gap: 30px;
   justify-content: center;
-  margin-top: 200px;
+  height: auto;
+  /* pag-top: 200px; */
 
 
   @media (max-width: 768px) {
@@ -23,7 +24,7 @@ const Wrapper = styled.div`
     width: 100%;
     height: auto;
     align-items: center;
-    margin-top: 150px;
+    /* margin-top: 150px; */
   }
 `;
 const Content = styled.div`

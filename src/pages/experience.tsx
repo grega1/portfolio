@@ -15,14 +15,14 @@ const Wrapper = styled.div`
   align-items: center;
   gap:20px;
   justify-content: center;
-margin-top: 200px;
+/* margin-top: 200px; */
   @media(max-width: 768px) {
     max-width: 430px;
     width:100%;
     height: auto;
 
     align-items: center;
-    margin-top: 150px;
+    /* margin-top: 150px; */
 
   }
 `;

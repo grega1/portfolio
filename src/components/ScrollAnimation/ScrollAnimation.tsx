@@ -28,7 +28,7 @@ export const ScrollAnimation = ({ children, width = "fit-content" }: Props) => {
           visible: { opacity: 1, y: 0 },
         }}
         initial="hidden"
-        transition={{duration:0.5, delay:0.25}}
+        transition={{duration:1, delay:0.25}}
         animate={mainControls}
       >
         {children}
