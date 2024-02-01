@@ -48,14 +48,14 @@ const Projects = () => {
 
 
   return (
-    <Wrapper>
+    <Wrapper id="projects">
       <Title text=".Projects" />
       <Content>
         {cardMockup.map((card) => (
           <Card {...card} />
         ))}
       </Content>
-      {isMobile ? <div></div> : <Button text="Show More" />}
+      {/* {isMobile ? <div></div> : <Button text="Show More" />} */}
     </Wrapper>
   );
 };

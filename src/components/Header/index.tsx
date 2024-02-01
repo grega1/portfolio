@@ -1,4 +1,4 @@
-import { Link } from "gatsby";
+import { Link } from "react-scroll";
 import React from "react";
 import styled from "styled-components";
 import Button from "../Button";
@@ -94,9 +94,9 @@ const Header = () => {
       <Content>
       <Logo> G R E G O </Logo>
      {isMobile? (<></>) :(<Nav>
-        <Link to="/">About Me</Link>
-        <Link to="/">Projects</Link>
-        <Link to="/">Experience</Link>
+        <Link to="about" smooth spy>About Me</Link>
+        <Link to="projects" smooth spy>Projects</Link>
+        <Link to="experience" smooth spy>Experience</Link>
         <Button onClick={handleClick} text="Resume"></Button>
       </Nav>)}
       </Content>

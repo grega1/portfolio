@@ -16,6 +16,7 @@ const Wrapper = styled(motion.div)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
   border:none;
   /* margin-top: 100px; */
   gap: 30px;
@@ -179,7 +180,7 @@ const AboutMe = () => {
   }, [isInView]);
 
   return (
-    <Wrapper  ref ={ref} variants={{
+    <Wrapper id="about" ref ={ref} variants={{
       hidden: { opacity: 0, y:0 },
       visible: { opacity: 1, y:75 },
     }}
